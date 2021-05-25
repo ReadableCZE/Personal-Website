@@ -1,0 +1,148 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: #272727;
+    overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
+        helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial,
+        sans-serif;
+}
+
+section {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    background: #272727;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+}
+@keyframes RGB {
+  from {
+    filter: hue-rotate(-140deg);
+  }
+  50% {
+    filter: hue-rotate(30deg);
+  }
+  to { 
+    filter: hue-rotate(-140deg);
+  }
+}
+
+@keyframes rainbow {
+    0% {
+        color: #f45c41;
+    }
+    10% {
+        color: #f4ac41;
+    }
+    20% {
+        color: #f4f441;
+    }
+    30% {
+        color: #4ef442;
+    }
+    40% {
+        color: #41b5f4;
+    }
+    50% {
+        color: #8a4cff;
+    }
+    60% {
+        color: #41b5f4;
+    }
+    70% {
+        color: #4ef442;
+    }
+    80% {
+        color: #f4f441;
+    }
+    90% {
+        color: #f4ac41;
+    }
+    to {
+        color: #f45c41;
+    }
+}
+
+#title-spacing {
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.ab {
+    font-size: 40px;
+}
+
+.rainbowText {
+    animation: RGB 7s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
+
+.row {
+    display: flex;
+}
+
+#desc {
+    color: #cfcfcf;
+    font-size: 16px;
+    margin-top: 1px;
+}
+
+#secondbox {
+    background: rgba(0, 0, 0, 0.356);
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    z-index: 2;
+    margin: 0 11vmax 0 11vmax;
+}
+
+.centerTitle {
+    width: 100%;
+    color: whitesmoke;
+    align-items: center;
+}
+
+.lang {
+    height: 20px !important;
+    width: 20px !important;
+    font-size: 10px !important;
+    text-align: right;
+    border-radius: 0 !important;
+    font-weight: 700 !important;
+    padding: 1px 0px 1px 3px !important;
+}
+
+#js {
+    color: #000000 !important;
+}
+#ts {
+    color: white !important;
+}
+
+.test {
+    position: relative;
+    height: 100%;
+    place-items: center;
+    display: none;
+    color: #0075d4;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(58, 58, 58, 0.4);
+}
+
+.g {
+    height: 0vw;
+}
+
+#logo {
+    animation: rainbow 7s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+}
